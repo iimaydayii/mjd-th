@@ -33,6 +33,11 @@
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
                   $arrPostData['messages'][0]['type'] = "text";
                   $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
+                }else if($arrJson['events'][0]['message']['text'] == "MJD EXTRA LIVING"){
+                  $arrPostData = array();
+                  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+                  $arrPostData['messages'][0]['type'] = "text";
+                  $arrPostData['messages'][0]['text'] = "kfl;dskl;fkdls;kfl;dsl;";
                 }else{
                   $arrPostData = array();
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
@@ -45,7 +50,7 @@
                   $arrPostData['messages'][0]['template']['actions'][0]['type'] = "message";
                   $arrPostData['messages'][0]['template']['actions'][0]['label'] = "MJD EXTRA LIVING";
                   $arrPostData['messages'][0]['template']['actions'][0]['text'] = "MJD EXTRA LIVING";
-                  
+
 
                   // $arrPostData = array();
                   // $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
