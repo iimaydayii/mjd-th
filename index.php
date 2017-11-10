@@ -58,15 +58,15 @@
                   $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ติดต่อแผนกบริการหลังการขาย";
                   $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ติดต่อแผนกบริการหลังการขาย";
 
-                  $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "MJD EXTRA VIVING";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "MJD EXTRA VIVING";
+                  $arrPostData['messages'][0]['template']['columns'][1]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  $arrPostData['messages'][0]['template']['columns'][1]['action']['type'] = "message";
+                  $arrPostData['messages'][0]['template']['columns'][1]['action']['label'] = "MJD EXTRA VIVING";
+                  $arrPostData['messages'][0]['template']['columns'][1]['action']['text'] = "MJD EXTRA VIVING";
 
-                  $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ค้นหาข้อมูลโครงการ";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ค้นหาข้อมูลโครงการ";
+                  $arrPostData['messages'][0]['template']['columns'][2]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  $arrPostData['messages'][0]['template']['columns'][2]['action']['type'] = "message";
+                  $arrPostData['messages'][0]['template']['columns'][2]['action']['label'] = "ค้นหาข้อมูลโครงการ";
+                  $arrPostData['messages'][0]['template']['columns'][2]['action']['text'] = "ค้นหาข้อมูลโครงการ";
                   
                 }
                 $ch = curl_init();
