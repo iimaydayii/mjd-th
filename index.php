@@ -13,6 +13,29 @@
                 $arrJson = json_decode($content, true);
                 $strUrl = "https://api.line.me/v2/bot/message/reply";
 
+                // $arrPostData = array();
+                //   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+                //   $arrPostData['messages'][0]['type'] = "template";
+                //   $arrPostData['messages'][0]['altText'] = "MJD TH MENU";
+                //   $arrPostData['messages'][0]['template']['type'] = "image_carousel";
+                  
+                //   $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_3.jpg";
+                //   $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
+                //   $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ติดต่อแผนกบริการหลังการขาย";
+                //   $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ติดต่อแผนกบริการหลังการขาย";
+
+                //   $arrPostData['messages'][0]['template']['columns'][1]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                //   $arrPostData['messages'][0]['template']['columns'][1]['action']['type'] = "message";
+                //   $arrPostData['messages'][0]['template']['columns'][1]['action']['label'] = "MJD EXTRA VIVING";
+                //   $arrPostData['messages'][0]['template']['columns'][1]['action']['text'] = "MJD EXTRA VIVING";
+
+                //   $arrPostData['messages'][0]['template']['columns'][2]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_1.jpg";
+                //   $arrPostData['messages'][0]['template']['columns'][2]['action']['type'] = "message";
+                //   $arrPostData['messages'][0]['template']['columns'][2]['action']['label'] = "ค้นหาข้อมูลโครงการ";
+                //   $arrPostData['messages'][0]['template']['columns'][2]['action']['text'] = "ค้นหาข้อมูลโครงการ";
+                //   echo json_encode($arrPostData);
+                //   exit;
+
 
                  
                 $arrHeader = array();
