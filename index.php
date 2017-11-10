@@ -46,13 +46,7 @@
                   $arrPostData['messages'][0]['template']['actions'][0]['label'] = "ติดต่อแผนกบริการหลังการขาย";
                   $arrPostData['messages'][0]['template']['actions'][0]['text'] = "AFFTER SALE SERVICE";
 
-                  $arrPostData['messages'][0]['template']['actions'][1]['type'] = "message";
-                  $arrPostData['messages'][0]['template']['actions'][1]['label'] = "MJD EXTRA LIVING";
-                  $arrPostData['messages'][0]['template']['actions'][1]['text'] = "MJD EXTRA LIVING";
-
-                  $arrPostData['messages'][0]['template']['actions'][2]['type'] = "message";
-                  $arrPostData['messages'][0]['template']['actions'][2]['label'] = "ค้นหาข้อมูลโครงการ";
-                  $arrPostData['messages'][0]['template']['actions'][2]['text'] = "SEARCH PROJECT";
+                 
 
                   // $arrPostData = array();
                   // $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
