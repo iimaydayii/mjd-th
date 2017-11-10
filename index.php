@@ -52,7 +52,7 @@
                   $arrPostData['messages'][0]['type'] = "template";
                   $arrPostData['messages'][0]['altText'] = "test altText";
                   $arrPostData['messages'][0]['template']['type'] = "buttons";
-                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "images/auto_rich_msg.jpg";
+                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "https://mjd-th.herokuapp.com/images/auto_rich_msg.jpg";
                   $arrPostData['messages'][0]['template']['title'] = "Menu";
                   $arrPostData['messages'][0]['template']['text'] = "select";
                   $arrPostData['messages'][0]['template']['actions'][0]['type'] = "uri";
