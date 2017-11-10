@@ -49,8 +49,15 @@
                 }else{
                   $arrPostData = array();
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-                  $arrPostData['messages'][0]['type'] = "text";
-                  $arrPostData['messages'][0]['text'] = "ฉันไม่เข้าใจคำสั่ง";
+                  $arrPostData['messages'][0]['type'] = "template";
+                  $arrPostData['messages'][0]['altText'] = "test altText";
+                  $arrPostData['messages'][0]['template']['type'] = "buttons";
+                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "http://203.146.166.169/uploads/auto_rich_msg.jpg";
+                  $arrPostData['messages'][0]['template']['title'] = "Menu";
+                  $arrPostData['messages'][0]['template']['text'] = "select";
+                  $arrPostData['messages'][0]['template']['actions'][0]['type'] = "uri";
+                  $arrPostData['messages'][0]['template']['actions'][0]['label'] = "view";
+                  $arrPostData['messages'][0]['template']['actions'][0]['uri'] = "http://www.mjd.co.th/";
                 }
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL,$strUrl);
