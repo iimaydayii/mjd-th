@@ -13,29 +13,6 @@
                 $arrJson = json_decode($content, true);
                 $strUrl = "https://api.line.me/v2/bot/message/reply";
 
-                // $arrPostData = array();
-                //   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-                //   $arrPostData['messages'][0]['type'] = "template";
-                //   $arrPostData['messages'][0]['altText'] = "MJD TH MENU";
-                //   $arrPostData['messages'][0]['template']['type'] = "image_carousel";
-                  
-                //   $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_3.jpg";
-                //   $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
-                //   $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ติดต่อแผนกบริการหลังการขาย";
-                //   $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ติดต่อแผนกบริการหลังการขาย";
-
-                //   $arrPostData['messages'][0]['template']['columns'][1]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
-                //   $arrPostData['messages'][0]['template']['columns'][1]['action']['type'] = "message";
-                //   $arrPostData['messages'][0]['template']['columns'][1]['action']['label'] = "MJD EXTRA VIVING";
-                //   $arrPostData['messages'][0]['template']['columns'][1]['action']['text'] = "MJD EXTRA VIVING";
-
-                //   $arrPostData['messages'][0]['template']['columns'][2]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_1.jpg";
-                //   $arrPostData['messages'][0]['template']['columns'][2]['action']['type'] = "message";
-                //   $arrPostData['messages'][0]['template']['columns'][2]['action']['label'] = "ค้นหาข้อมูลโครงการ";
-                //   $arrPostData['messages'][0]['template']['columns'][2]['action']['text'] = "ค้นหาข้อมูลโครงการ";
-                //   echo json_encode($arrPostData);
-                //   exit;
-
 
                  
                 $arrHeader = array();
@@ -56,41 +33,40 @@
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
                   $arrPostData['messages'][0]['type'] = "text";
                   $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
-                }else if($arrJson['events'][0]['message']['text'] == "mjdtest"){
-                  $arrPostData = array();
-                  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-                  $arrPostData['messages'][0]['type'] = "template";
-                  $arrPostData['messages'][0]['altText'] = "test altText";
-                  $arrPostData['messages'][0]['template']['type'] = "buttons";
-                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "http://203.146.166.169//uploads/gallery/29-Oct-2017/08980d80275afd3c751e06b5f4cfd898.jpg";
-                  $arrPostData['messages'][0]['template']['title'] = "Menu";
-                  $arrPostData['messages'][0]['template']['text'] = "select";
-                  $arrPostData['messages'][0]['template']['actions'][0]['type'] = "uri";
-                  $arrPostData['messages'][0]['template']['actions'][0]['label'] = "view";
-                  $arrPostData['messages'][0]['template']['actions'][0]['uri'] = "http://www.mjd.co.th/";
-                  
                 }else{
                   $arrPostData = array();
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
                   $arrPostData['messages'][0]['type'] = "template";
                   $arrPostData['messages'][0]['altText'] = "MJD TH MENU";
-                  $arrPostData['messages'][0]['template']['type'] = "image_carousel";
-                  
-                  $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_3.jpg";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ติดต่อแผนกบริการหลังการขาย";
-                  $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ติดต่อแผนกบริการหลังการขาย";
+                  $arrPostData['messages'][0]['template']['type'] = "buttons";
+                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  $arrPostData['messages'][0]['template']['title'] = "MJD EXTRA LIVING";
+                  $arrPostData['messages'][0]['template']['text'] = "THE ULTIMATE IN LUXURY LIVING
+                    ";
+                  $arrPostData['messages'][0]['template']['actions'][0]['type'] = "message";
+                  $arrPostData['messages'][0]['template']['actions'][0]['label'] = "MJD EXTRA LIVING";
+                  $arrPostData['messages'][0]['template']['actions'][0]['text'] = "MJD EXTRA LIVING";
 
-                  $arrPostData['messages'][0]['template']['columns'][1]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
-                  $arrPostData['messages'][0]['template']['columns'][1]['action']['type'] = "message";
-                  $arrPostData['messages'][0]['template']['columns'][1]['action']['label'] = "MJD EXTRA VIVING";
-                  $arrPostData['messages'][0]['template']['columns'][1]['action']['text'] = "MJD EXTRA VIVING";
-
-                  $arrPostData['messages'][0]['template']['columns'][2]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
-                  $arrPostData['messages'][0]['template']['columns'][2]['action']['type'] = "message";
-                  $arrPostData['messages'][0]['template']['columns'][2]['action']['label'] = "ค้นหาข้อมูลโครงการ";
-                  $arrPostData['messages'][0]['template']['columns'][2]['action']['text'] = "ค้นหาข้อมูลโครงการ";
+                  // $arrPostData = array();
+                  // $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
+                  // $arrPostData['messages'][0]['type'] = "template";
+                  // $arrPostData['messages'][0]['altText'] = "MJD TH MENU";
+                  // $arrPostData['messages'][0]['template']['type'] = "image_carousel";
                   
+                  // $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_3.jpg";
+                  // $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
+                  // $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ติดต่อแผนกบริการหลังการขาย";
+                  // $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ติดต่อแผนกบริการหลังการขาย";
+
+                  // $arrPostData['messages'][0]['template']['columns'][1]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  // $arrPostData['messages'][0]['template']['columns'][1]['action']['type'] = "message";
+                  // $arrPostData['messages'][0]['template']['columns'][1]['action']['label'] = "MJD EXTRA VIVING";
+                  // $arrPostData['messages'][0]['template']['columns'][1]['action']['text'] = "MJD EXTRA VIVING";
+
+                  // $arrPostData['messages'][0]['template']['columns'][2]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  // $arrPostData['messages'][0]['template']['columns'][2]['action']['type'] = "message";
+                  // $arrPostData['messages'][0]['template']['columns'][2]['action']['label'] = "ค้นหาข้อมูลโครงการ";
+                  // $arrPostData['messages'][0]['template']['columns'][2]['action']['text'] = "ค้นหาข้อมูลโครงการ";
                 }
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL,$strUrl);
