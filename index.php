@@ -13,20 +13,7 @@
                 $arrJson = json_decode($content, true);
                 $strUrl = "https://api.line.me/v2/bot/message/reply";
 
-                 $arrPostData = array();
-                  $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
-                  $arrPostData['messages'][0]['type'] = "template";
-                  $arrPostData['messages'][0]['altText'] = "test altText";
-                  $arrPostData['messages'][0]['template']['type'] = "buttons";
-                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "http://www.mjd.co.th/images/slide_photo/1509940201.jpg";
-                  $arrPostData['messages'][0]['template']['title'] = "Menu";
-                  $arrPostData['messages'][0]['template']['text'] = "select";
-                  $arrPostData['messages'][0]['template']['actions'][0]['type'] = "uri";
-                  $arrPostData['messages'][0]['template']['actions'][0]['label'] = "view";
-                  $arrPostData['messages'][0]['template']['actions'][0]['uri'] = "http://www.mjd.co.th/";
-
-                  echo json_encode($arrPostData);
-                  exit;
+                
                  
                 $arrHeader = array();
                 $arrHeader[] = "Content-Type: application/json";
