@@ -39,7 +39,7 @@
                   $arrPostData['messages'][0]['type'] = "template";
                   $arrPostData['messages'][0]['altText'] = "test altText";
                   $arrPostData['messages'][0]['template']['type'] = "buttons";
-                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "http://www.mjd.co.th/images/slide_photo/1509940201.jpg";
+                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "http://203.146.166.169//uploads/gallery/29-Oct-2017/08980d80275afd3c751e06b5f4cfd898.jpg";
                   $arrPostData['messages'][0]['template']['title'] = "Menu";
                   $arrPostData['messages'][0]['template']['text'] = "select";
                   $arrPostData['messages'][0]['template']['actions'][0]['type'] = "uri";
