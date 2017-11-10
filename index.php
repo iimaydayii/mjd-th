@@ -13,7 +13,7 @@
                 $arrJson = json_decode($content, true);
                 $strUrl = "https://api.line.me/v2/bot/message/reply";
 
-                
+
                  
                 $arrHeader = array();
                 $arrHeader[] = "Content-Type: application/json";
@@ -33,7 +33,7 @@
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
                   $arrPostData['messages'][0]['type'] = "text";
                   $arrPostData['messages'][0]['text'] = "ฉันทำอะไรไม่ได้เลย คุณต้องสอนฉันอีกเยอะ";
-                }else if($arrJson['events'][0]['message']['text'] == "mjd"){
+                }else if($arrJson['events'][0]['message']['text'] == "mjdtest"){
                   $arrPostData = array();
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
                   $arrPostData['messages'][0]['type'] = "template";
