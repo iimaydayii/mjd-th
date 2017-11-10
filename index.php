@@ -50,14 +50,24 @@
                   $arrPostData = array();
                   $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
                   $arrPostData['messages'][0]['type'] = "template";
-                  $arrPostData['messages'][0]['altText'] = "test altText";
-                  $arrPostData['messages'][0]['template']['type'] = "buttons";
-                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "https://mjd-th.herokuapp.com/images/auto_rich_msg.jpg";
-                  $arrPostData['messages'][0]['template']['title'] = "Menu";
-                  $arrPostData['messages'][0]['template']['text'] = "select";
-                  $arrPostData['messages'][0]['template']['actions'][0]['type'] = "uri";
-                  $arrPostData['messages'][0]['template']['actions'][0]['label'] = "view";
-                  $arrPostData['messages'][0]['template']['actions'][0]['uri'] = "http://www.mjd.co.th/";
+                  $arrPostData['messages'][0]['altText'] = "MJD TH MENU";
+                  $arrPostData['messages'][0]['template']['type'] = "image_carousel";
+                  
+                  $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_3.jpg";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ติดต่อแผนกบริการหลังการขาย";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ติดต่อแผนกบริการหลังการขาย";
+
+                  $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "MJD EXTRA VIVING";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "MJD EXTRA VIVING";
+
+                  $arrPostData['messages'][0]['template']['columns'][0]['imageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['type'] = "message";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['label'] = "ค้นหาข้อมูลโครงการ";
+                  $arrPostData['messages'][0]['template']['columns'][0]['action']['text'] = "ค้นหาข้อมูลโครงการ";
+                  
                 }
                 $ch = curl_init();
                 curl_setopt($ch, CURLOPT_URL,$strUrl);
