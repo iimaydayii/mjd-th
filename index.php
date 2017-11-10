@@ -39,14 +39,13 @@
                   $arrPostData['messages'][0]['type'] = "template";
                   $arrPostData['messages'][0]['altText'] = "MJD TH MENU";
                   $arrPostData['messages'][0]['template']['type'] = "buttons";
-                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "https://mjd-th.herokuapp.com/images/banner_2.jpg";
+                  $arrPostData['messages'][0]['template']['thumbnailImageUrl'] = "https://mjd-th.herokuapp.com/images/banner_3.jpg";
                   $arrPostData['messages'][0]['template']['title'] = "คู่มือผู้ใช้";
                   $arrPostData['messages'][0]['template']['text'] = "ต้องการให้เมเจอร์ช่วยเรื่องอะไรค่ะ";
                   $arrPostData['messages'][0]['template']['actions'][0]['type'] = "message";
-                  $arrPostData['messages'][0]['template']['actions'][0]['label'] = "ติดต่อแผนกบริการหลังการขาย";
-                  $arrPostData['messages'][0]['template']['actions'][0]['text'] = "AFFTER SALE SERVICE";
-
-                 
+                  $arrPostData['messages'][0]['template']['actions'][0]['label'] = "MJD EXTRA LIVING";
+                  $arrPostData['messages'][0]['template']['actions'][0]['text'] = "MJD EXTRA LIVING";
+                  
 
                   // $arrPostData = array();
                   // $arrPostData['replyToken'] = $arrJson['events'][0]['replyToken'];
